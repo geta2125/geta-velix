@@ -1,10 +1,10 @@
 import { createRoot } from "react-dom/client";
-import TailwindCSS from "./Tailwindcss";
 import './tailwind.css';
+import Tailwindcss from "./Tailwindcss";
 
 createRoot(document.getElementById("root"))
     .render(
         <div>
-            <TailwindCSS/>
+            <Tailwindcss/>
         </div>
     )

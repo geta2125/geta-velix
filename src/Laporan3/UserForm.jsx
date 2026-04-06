@@ -1,7 +1,7 @@
 import { useState } from "react";
 import InputField from "./components/InputField";
-import SelectField from "./SelectField";
-import ResultCard from "./ResultCard";
+import SelectField from "./components/SelectField";
+import ResultCard from "./components/ResultCard";
 
 export default function UserForm() {
 
@@ -50,82 +50,73 @@ export default function UserForm() {
   };
 
   return (
-    <div className="flex justify-center items-start p-10 
-                    min-h-screen 
-                    bg-gradient-to-br from-[#fdfcfb] via-[#e2d1c3] to-[#f8e8e8]">
+    <div>
 
-      {/* CARD */}
-      <div className="w-full max-w-md 
-                      bg-white/80 backdrop-blur-xl 
-                      p-8 rounded-3xl 
-                      shadow-2xl border border-white/40">
+      {/* TITLE */}
+      <div className="text-center mb-6">
+        <h1 className="text-xl font-bold text-[#6b5e5b]">
+          geta-velix
+        </h1>
+        <p className="text-sm text-[#8c7b75]">
+          Form Member Coffee ☕
+        </p>
+      </div>
 
-        {/* TYPOGRAPHY */}
-        <div className="text-center mb-6">
-          <h1 className="text-2xl font-bold text-[#6b5e5b]">
-            geta-velix
-          </h1>
-          <p className="text-sm text-[#8c7b75]">
-            Form Member Coffee ☕
-          </p>
-        </div>
+      {/* INPUT */}
+      <div className="space-y-3">
 
-        {/* INPUT */}
-        <div className="space-y-3">
+        <InputField label="Nama" name="nama" type="text" onChange={handleChange}/>
+        {errors.nama && <p className="text-red-500 text-sm">{errors.nama}</p>}
 
-          <InputField label="Nama" name="nama" type="text" onChange={handleChange}/>
-          {errors.nama && <p className="text-red-500 text-sm">{errors.nama}</p>}
+        <InputField label="Email" name="email" type="text" onChange={handleChange}/>
+        {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
 
-          <InputField label="Email" name="email" type="text" onChange={handleChange}/>
-          {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
+        <InputField label="Umur" name="umur" type="text" onChange={handleChange}/>
+        {errors.umur && <p className="text-red-500 text-sm">{errors.umur}</p>}
 
-          <InputField label="Umur" name="umur" type="text" onChange={handleChange}/>
-          {errors.umur && <p className="text-red-500 text-sm">{errors.umur}</p>}
+        <SelectField
+          label="Membership"
+          name="membership"
+          options={["Bronze", "Silver", "Gold"]}
+          onChange={handleChange}
+          error={errors.membership}
+        />
 
-          <SelectField
-            label="Membership"
-            name="membership"
-            options={["Bronze", "Silver", "Gold"]}
-            onChange={handleChange}
-            error={errors.membership}
-          />
-
-          <SelectField
-            label="Pembayaran"
-            name="pembayaran"
-            options={["Cash", "QRIS", "E-Wallet"]}
-            onChange={handleChange}
-            error={errors.pembayaran}
-          />
-
-        </div>
-
-        {/* BUTTON (CONDITIONAL) */}
-        {Object.keys(errors).length === 0 &&
-          formData.nama &&
-          formData.email &&
-          formData.umur && (
-            <button
-              onClick={handleSubmit}
-              className="w-full mt-5 py-2 rounded-xl 
-                         bg-[#6b5e5b] text-white font-semibold 
-                         hover:bg-[#8c7b75] transition shadow-lg"
-            >
-              Submit
-            </button>
-          )}
-
-        {/* RESULT */}
-        {submitted && (
-          <div className="mt-5 p-4 rounded-xl 
-                          bg-[#fdfaf7] 
-                          border-l-4 border-[#d6ccc2] 
-                          shadow-md">
-            <ResultCard data={formData} />
-          </div>
-        )}
+        <SelectField
+          label="Pembayaran"
+          name="pembayaran"
+          options={["Cash", "QRIS", "E-Wallet"]}
+          onChange={handleChange}
+          error={errors.pembayaran}
+        />
 
       </div>
+
+      {/* BUTTON */}
+      {Object.keys(errors).length === 0 &&
+        formData.nama &&
+        formData.email &&
+        formData.umur && (
+          <button
+            onClick={handleSubmit}
+            className="w-full mt-5 py-2 rounded-xl 
+                       bg-[#6b5e5b] text-white font-semibold 
+                       hover:bg-[#8c7b75] transition shadow-lg"
+          >
+            Submit
+          </button>
+        )}
+
+      {/* RESULT */}
+      {submitted && (
+        <div className="mt-5 p-4 rounded-xl 
+                        bg-[#fdfaf7] 
+                        border-l-4 border-[#d6ccc2] 
+                        shadow-md">
+          <ResultCard data={formData} />
+        </div>
+      )}
+
     </div>
   );
 }
