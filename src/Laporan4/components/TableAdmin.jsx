@@ -94,8 +94,6 @@ export default function TableAdmin({ data = [] }) {
                       </span>
                     </td>
 
-
-
                     {/* Status Badge dengan Dot */}
                     <td className="whitespace-nowrap px-6 py-4 text-center">
                       <span className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-bold ${style.badge}`}>

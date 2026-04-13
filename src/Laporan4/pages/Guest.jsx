@@ -32,14 +32,14 @@ export default function Guest() {
       />
 
       <div className="grid md:grid-cols-4 gap-4 mt-4">
-        {filteredData.map((item) => (
-          <CardItem key={item.id} item={item} />
+        {filteredData.map((item, index) => (
+          <CardItem key={item.id} item={item} index={index} />
         ))}
       </div>
 
       {filteredData.length === 0 && (
         <p className="text-center mt-4 text-gray-500">
-          Data tidak ditemukan 
+          Data tidak ditemukan
         </p>
       )}
     </div>
