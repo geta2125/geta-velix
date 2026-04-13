@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "nama": "Geta Dewi",
+    "email": "geta@gmail.com",
+    "membership": "Gold",
+    "gambar": "https://i.pravatar.cc/150?img=1",
+    "detail": { "umur": 20, "kota": "Pekanbaru", "status": "Aktif" }
+  },
+  {
+    "id": 2,
+    "nama": "M. Aidil Albukhori",
+    "email": "aidil@gmail.com",
+    "membership": "Silver",
+    "gambar": "https://i.pravatar.cc/150?img=2",
+    "detail": { "umur": 21, "kota": "Jakarta", "status": "Aktif" }
+  },
+  {
+    "id": 3,
+    "nama": "Jihan Zahra",
+    "email": "jihan@gmail.com",
+    "membership": "Bronze",
+    "gambar": "https://i.pravatar.cc/150?img=3",
+    "detail": { "umur": 19, "kota": "Bandung", "status": "Nonaktif" }
+  },
+  {
+    "id": 4,
+    "nama": "Aurelle Vevina",
+    "email": "aurelle@gmail.com",
+    "membership": "Gold",
+    "gambar": "https://i.pravatar.cc/150?img=4",
+    "detail": { "umur": 20, "kota": "Medan", "status": "Aktif" }
+  },
+  {
+    "id": 5,
+    "nama": "Kalea Belvania",
+    "email": "kalea@gmail.com",
+    "membership": "Silver",
+    "gambar": "https://i.pravatar.cc/150?img=5",
+    "detail": { "umur": 21, "kota": "Padang", "status": "Aktif" }
+  },
+  {
+    "id": 6,
+    "nama": "Zura Elmira",
+    "email": "zura@gmail.com",
+    "membership": "Bronze",
+    "gambar": "https://i.pravatar.cc/150?img=6",
+    "detail": { "umur": 19, "kota": "Surabaya", "status": "Nonaktif" }
+  },
+  {
+    "id": 7,
+    "nama": "Cia Marsha",
+    "email": "cia@gmail.com",
+    "membership": "Gold",
+    "gambar": "https://i.pravatar.cc/150?img=7",
+    "detail": { "umur": 22, "kota": "Yogyakarta", "status": "Aktif" }
+  },
+  {
+    "id": 8,
+    "nama": "Liora Arwen",
+    "email": "liora@gmail.com",
+    "membership": "Silver",
+    "gambar": "https://i.pravatar.cc/150?img=8",
+    "detail": { "umur": 20, "kota": "Semarang", "status": "Aktif" }
+  },
+  {
+    "id": 9,
+    "nama": "Sasha Kirana",
+    "email": "sasha@gmail.com",
+    "membership": "Bronze",
+    "gambar": "https://i.pravatar.cc/150?img=9",
+    "detail": { "umur": 23, "kota": "Aceh", "status": "Nonaktif" }
+  },
+  {
+    "id": 10,
+    "nama": "Freya Alesha",
+    "email": "freya@gmail.com",
+    "membership": "Gold",
+    "gambar": "https://i.pravatar.cc/150?img=10",
+    "detail": { "umur": 21, "kota": "Makassar", "status": "Aktif" }
+  },
+  {
+    "id": 11,
+    "nama": "Ivy Clarissa",
+    "email": "ivy@gmail.com",
+    "membership": "Silver",
+    "gambar": "https://i.pravatar.cc/150?img=11",
+    "detail": { "umur": 22, "kota": "Batam", "status": "Aktif" }
+  },
+  {
+    "id": 12,
+    "nama": "Nala Jovanka",
+    "email": "nala@gmail.com",
+    "membership": "Bronze",
+    "gambar": "https://i.pravatar.cc/150?img=12",
+    "detail": { "umur": 19, "kota": "Palembang", "status": "Nonaktif" }
+  },
+  {
+    "id": 13,
+    "nama": "Ghea Anindita",
+    "email": "ghea@gmail.com",
+    "membership": "Gold",
+    "gambar": "https://i.pravatar.cc/150?img=13",
+    "detail": { "umur": 24, "kota": "Bogor", "status": "Aktif" }
+  },
+  {
+    "id": 14,
+    "nama": "Arlo Danendra",
+    "email": "arlo@gmail.com",
+    "membership": "Silver",
+    "gambar": "https://i.pravatar.cc/150?img=14",
+    "detail": { "umur": 20, "kota": "Depok", "status": "Aktif" }
+  },
+  {
+    "id": 15,
+    "nama": "Ezra Kenzie",
+    "email": "ezra@gmail.com",
+    "membership": "Bronze",
+    "gambar": "https://i.pravatar.cc/150?img=15",
+    "detail": { "umur": 23, "kota": "Malang", "status": "Nonaktif" }
+  },
+  {
+    "id": 16,
+    "nama": "Liam Aksara",
+    "email": "liam@gmail.com",
+    "membership": "Gold",
+    "gambar": "https://i.pravatar.cc/150?img=16",
+    "detail": { "umur": 21, "kota": "Solo", "status": "Aktif" }
+  },
+  {
+    "id": 17,
+    "nama": "Hugo Jevon",
+    "email": "hugo@gmail.com",
+    "membership": "Silver",
+    "gambar": "https://i.pravatar.cc/150?img=17",
+    "detail": { "umur": 22, "kota": "Bali", "status": "Aktif" }
+  },
+  {
+    "id": 18,
+    "nama": "Kenzo Radeya",
+    "email": "kenzo@gmail.com",
+    "membership": "Bronze",
+    "gambar": "https://i.pravatar.cc/150?img=18",
+    "detail": { "umur": 20, "kota": "Pontianak", "status": "Nonaktif" }
+  },
+  {
+    "id": 19,
+    "nama": "Zion Archerio",
+    "email": "zion@gmail.com",
+    "membership": "Gold",
+    "gambar": "https://i.pravatar.cc/150?img=19",
+    "detail": { "umur": 22, "kota": "Balikpapan", "status": "Aktif" }
+  },
+  {
+    "id": 20,
+    "nama": "Caspian Elio",
+    "email": "caspian@gmail.com",
+    "membership": "Silver",
+    "gambar": "https://i.pravatar.cc/150?img=20",
+    "detail": { "umur": 24, "kota": "Samarinda", "status": "Aktif" }
+  }
+]
